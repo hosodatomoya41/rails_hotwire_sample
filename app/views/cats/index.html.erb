@@ -13,6 +13,11 @@
   <%= link_to "クリア", cats_path %>
 <% end %>
 
+<%# ソートのリンク name属性 %>
+<%= sort_link(@search, :name) %>
+<%# ソートのリンク age属性 %>
+<%= sort_link(@search, :age) %>
+
 <div id="cats">
   <% @cats.each do |cat| %>
     <%= render cat %>
